@@ -20,6 +20,13 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        Schema::create('diaries', function (Blueprint $table) {
+            $table->id();
+            $table->date('date');
+            $table->string('title');
+            $table->text('body');
+            $table->timestamps();
+        });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
@@ -43,6 +50,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('diaries');
         Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
     }
