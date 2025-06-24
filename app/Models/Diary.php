@@ -12,7 +12,7 @@ class Diary extends Model
     protected $fillable = [
         'date',
         'title',
-        'content',
+        'body',
     ];
 
 }

@@ -8,4 +8,7 @@ Hello, {{ $name }}
   <div>{{ $diary->date }}</div>
   <div>{{ $diary->title }}</div>
 </div>
+<div>
+  <a href="{{ route('diary.show', $diary) }}">{{ $diary->title }}</a>
+</div>
 @endforeach
