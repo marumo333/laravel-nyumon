@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/marumo333/laravel-nyumon/phpunit.xml" tests="2" assertions="6" errors="0" failures="0" skipped="0" time="0.170376">
+    <testsuite name="Feature" tests="2" assertions="6" errors="0" failures="0" skipped="0" time="0.170376">
+      <testsuite name="Tests\Feature\LaravelNyumon\Station13\DiaryControllerTest" file="/Users/marumo333/laravel-nyumon/tests/Feature/LaravelNyumon/Station13/DiaryControllerTest.php" tests="2" assertions="6" errors="0" failures="0" skipped="0" time="0.170376">
+        <testcase name="test_個別記事ページに削除ボタンが表示される" file="/Users/marumo333/laravel-nyumon/tests/Feature/LaravelNyumon/Station13/DiaryControllerTest.php" line="18" class="Tests\Feature\LaravelNyumon\Station13\DiaryControllerTest" classname="Tests.Feature.LaravelNyumon.Station13.DiaryControllerTest" assertions="2" time="0.163527"/>
+        <testcase name="test_指定した記事が削除される" file="/Users/marumo333/laravel-nyumon/tests/Feature/LaravelNyumon/Station13/DiaryControllerTest.php" line="35" class="Tests\Feature\LaravelNyumon\Station13\DiaryControllerTest" classname="Tests.Feature.LaravelNyumon.Station13.DiaryControllerTest" assertions="4" time="0.006849"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

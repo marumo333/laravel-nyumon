@@ -82,4 +82,17 @@ public function edit($id) {
         // 更新後、日記詳細ページにリダイレクトし、成功メッセージを表示
         return back()->with('message', '更新しました');
     }
+    public function destroy(Request $request) {
+  // IDを受け取る（引数で受け取る他に、下記の書き方もできます）
+  $id = $request->route('id');
+
+  // 削除対象となるデータを取得する
+  $diary = Diary::find($id);
+
+  // 削除する
+  $diary->delete();
+  
+  // 記事一覧画面に戻る
+  return redirect()->route('diary.index');
+}
 }
