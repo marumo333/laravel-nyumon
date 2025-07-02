@@ -61,5 +61,25 @@ public function show($id)
 
     return view('diary.show', compact('diary'));
 }
+public function edit($id) {
+  $diary = Diary::find($id);
+  return view('diary.edit', compact('diary'));
+}
+    public function update(Request $request, $id) {
+        // 更新対象となるデータを取得する
+        $diary = Diary::find($id);
 
+        // 入力値チェックを行う
+        // タイトルは20文字以内、本文は400文字以内という制限を設ける
+        $validated = $request->validate([
+            'title' => 'required|max:20',
+            'body' => 'required|max:400',
+        ]);
+
+        // チェック済みの値を使用して更新処理を行う
+        $diary->update($validated);
+
+        // 更新後、日記詳細ページにリダイレクトし、成功メッセージを表示
+        return back()->with('message', '更新しました');
+    }
 }

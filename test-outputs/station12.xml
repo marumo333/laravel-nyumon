@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/marumo333/laravel-nyumon/phpunit.xml" tests="2" assertions="7" errors="0" failures="0" skipped="0" time="0.170118">
+    <testsuite name="Feature" tests="2" assertions="7" errors="0" failures="0" skipped="0" time="0.170118">
+      <testsuite name="Tests\Feature\LaravelNyumon\Station12\DiaryControllerTest" file="/Users/marumo333/laravel-nyumon/tests/Feature/LaravelNyumon/Station12/DiaryControllerTest.php" tests="2" assertions="7" errors="0" failures="0" skipped="0" time="0.170118">
+        <testcase name="test_編集用のページが表示される" file="/Users/marumo333/laravel-nyumon/tests/Feature/LaravelNyumon/Station12/DiaryControllerTest.php" line="19" class="Tests\Feature\LaravelNyumon\Station12\DiaryControllerTest" classname="Tests.Feature.LaravelNyumon.Station12.DiaryControllerTest" assertions="4" time="0.155244"/>
+        <testcase name="test_日記が更新される" file="/Users/marumo333/laravel-nyumon/tests/Feature/LaravelNyumon/Station12/DiaryControllerTest.php" line="38" class="Tests\Feature\LaravelNyumon\Station12\DiaryControllerTest" classname="Tests.Feature.LaravelNyumon.Station12.DiaryControllerTest" assertions="3" time="0.014875"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

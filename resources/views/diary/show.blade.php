@@ -6,3 +6,8 @@
   <div>{{ $diary->body }}</div>
   <div>{{ $diary->date }}</div>
 </div>
+<div>
+  <a href="{{ route('diary.edit', ['diary' => $diary->id]) }}">
+    更新
+  </a>
+</div>
